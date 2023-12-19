@@ -1,0 +1,389 @@
+@import "general";
+*{
+    @include general-property;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: $sec-color;
+   box-sizing: border-box;
+}
+header{
+    @extend .display;
+    margin-left: 3%;
+   margin-right: 3%;
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+.logo{
+    font-size: 2.5rem;
+    padding: 25px;
+    cursor: pointer;
+}
+nav{
+    margin-right: auto;
+    ul{
+        list-style: none; 
+    }
+    li{
+        display: inline; 
+        padding: 25px;  
+    }
+    a{
+        font-family: $pri-family;
+        color: $text-color;
+        font-size: $text-font;
+        font-weight: $med;
+        line-height: normal;
+        transition: .3s ease;
+        cursor: pointer;
+        
+    }
+    a:hover{
+        border-bottom: 3px solid $pri-color;
+        color: $pri-color;
+        }
+}
+.right-menu{
+    a{
+        color: $text-color;
+        font-size: $text-font;
+        padding: 25px;
+        font-weight: $med;
+        line-height: normal;
+        font-family: $pri-family;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+}
+ 
+/*--Hero page here--*/
+.hero{
+    @extend .display;
+    @extend .g-margin;
+    margin-top: 2% !important;
+    }
+.hero-content{
+     .hello{
+        font-size: $text-font;
+        color: $text-color;
+        font-family: $pri-family;
+   }
+        h1{
+        font-size: 75px;
+        color: $text-color; 
+        font-family: $sec-family;
+        line-height: 0.8;
+        letter-spacing: 2px;
+        font-weight: 600;
+        span{
+            font-size: 48px;
+            color: $pri-color;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+    }
+   
+    p{
+        font-size: $text-font;
+        color: $text-color; 
+        font-family:  $pri-family;
+        line-height: 1.5;
+        font-weight: 300;
+        padding: 10px 0px 55px;
+        span{
+            color: $pri-color;
+            font-weight: 300;
+        }
+    }
+    .social-icons{
+        a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.2rem;
+            height: 2.2rem;
+            background: $text-color;
+            border: .2rem solid $pri-color;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            color: $sec-color;
+            margin: 4px;
+            transition: .5s ease;
+        }
+        a:hover{
+            background: $pri-color;
+            color: $sec-color;
+            box-shadow: 0 0 1rem $pri-color;
+        }
+    }
+    .btn{
+        @extend .button;
+    }
+    }
+
+.hero-img{
+    img{
+        width: 500px;
+        object-fit: contain;
+        margin-right: -15%;
+        margin-top: -12%;
+}
+}
+/*---skills---*/
+#skills{
+    @extend .g-margin;
+    .se{
+        text-align: left;
+        color: $text-color;
+         font-size: 32px; 
+         font-weight: 600;
+         padding-bottom: 20px;
+         font-family: $sec-family; 
+    }
+    .skills{
+        @extend .display;
+        gap: 2rem;
+    .skill{
+        img{
+           width: 100%;
+            
+        }
+    }
+}
+}
+/*----about----*/
+#about{
+    @extend .g-margin;
+    h2{
+        text-align: center;
+        color: $pri-color;
+         font-size: 35px; 
+         font-weight: 500;
+         padding: 20px;
+         font-family: $pri-family;
+    }
+    .span{
+        color: $text-color !important;
+        padding: 10px;
+        font-family: $sec-family;
+        font-weight: 400 !important;
+         }
+   .About{
+    @extend .display;
+    gap: 2rem;
+    .about-img img{
+        width: 650px !important;
+    }
+    .about-content{
+        margin-left: -25px;
+        .about-heading{
+        text-align: left;
+        color: $text-color;
+        font-size: 35px; 
+        font-weight: 400;
+         font-family: $pri-family;
+         margin-left: -15px;
+        }
+        p{
+            text-align: left;
+            color: #fff;
+             font-size: 28px; 
+             font-weight: 150; 
+             font-family: $pri-family;
+             padding-bottom: 15%;
+        }
+        .btn{
+            @extend .button;
+        }
+    }
+   } 
+}
+
+/*----services----*/
+#services{
+    margin-top: 5%;
+    h2{
+        text-align: center;
+        color: $pri-color;
+         font-size: 35px; 
+         font-weight: 500;
+         padding: 20px;
+         font-family: $pri-family;    
+    }
+    .span{
+        color: $text-color !important;
+        padding: 10px;
+        font-family: $pri-family;
+         }
+   .Services{
+    @extend .display;
+    justify-content: center !important;
+    .service-img img{
+        width: 100% !important;
+    }
+   } 
+}
+/*----testmonial----*/
+#testmonials{
+    margin-top: 5%;
+    h2{
+        text-align: center;
+        color: $text-color;
+         font-size: 35px; 
+         font-weight: 400;
+         padding: 20px;
+         font-family: $pri-family;
+         margin-bottom: 3%;
+    }
+   .Testmonials{
+    @extend .display;
+    justify-content: center !important;
+    .testmon-img img{
+        width: 100% !important;
+        margin: 0 auto;
+    }
+   } 
+}
+/*----contact----*/
+#contact{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    h2{
+        text-align: center;
+        color: $text-color;
+         font-size: 35px; 
+         font-weight: 400;
+         padding: 10px;
+         font-family: $pri-family;
+         margin-bottom: 2%;
+    }.me{
+        color: $pri-color;
+        font-family: $pri-family;
+    }
+     form{
+    margin: 10px auto;
+    background: transparent;
+    width: 70rem;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 3rem;
+    .input-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+       }
+       input,
+    textarea{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    background-color: $text-color;
+    color: $sec-color;
+    border-radius: .2rem;
+    margin: .5rem 0;
+   }
+   input{
+    width: 49%;
+   }
+   textarea{
+    resize: none;
+   }
+   }
+  button{
+    @extend .button;
+    margin-top: 20px !important;
+    font-size: 25px;
+   }
+}
+/*---footer---*/
+footer{ 
+    flex-wrap: wrap;
+    background-color: $pri-color;
+    height: 12vh;
+    .footer{
+    @extend .display;
+    margin-left: 3%;
+    margin-right: 3%;
+   .logo{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+   .menu{
+    margin-right: auto;
+    ul{
+        list-style: none; 
+    }
+    li{
+        display: inline; 
+        padding: 25px;  
+    }
+    a{
+        font-family: $pri-family;
+        color: $sec-color;
+        font-size: $text-font;
+        font-weight: $med;
+        line-height: normal;
+        transition: .3s ease;
+        cursor: pointer;
+        
+    }
+}
+   .social-icons{
+    a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        background: $sec-color;
+        border: .2rem solid $pri-color;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: $text-color;
+        margin: 2px;
+        transition: .5s ease;
+    }
+    a:hover{
+        border: 3px solid $pri-color;
+        color: $pri-color;
+        box-shadow: 0 0 1rem $sec-color;
+    }
+}
+    }
+}
+/*menu responsiveness */
+.menuIcon{
+    display: none;
+    font-size: 3.6rem;
+    color: $text-color;
+    cursor: pointer;
+}
+.navbar{
+    display: none;
+    ul{
+        list-style: none; 
+    }
+    li{
+        display: inline; 
+        padding: 25px;  
+    }
+    a{
+        font-family: $pri-family;
+        color: $text-color;
+        font-size: $text-font;
+        font-weight: $med;
+        line-height: normal;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+    a:hover{
+        border-bottom: 3px solid $pri-color;
+        color: $pri-color;
+        }
+}
