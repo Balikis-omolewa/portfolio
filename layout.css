@@ -173,7 +173,11 @@ font-size: 25px;
     #services .Services {
         display: block;
     }
-    #services .Services .service-img img {
+     #services .Services .service-img img {
+        display: none;
+    }
+    #services .Services .service-img .m-ser{
+        display: block;
         width: 100%;
     }
 }
