@@ -67,10 +67,11 @@ nav, .right-menu{
     }
     .hero-content .hello {
         font-size: 18px;
+        padding-bottom: 5%;
     }
     .hero-content h1 {
         font-size: 4.5rem;
-        line-height: 0.8;
+        line-height: 0.9;
         white-space: normal;
     }
     .hero-content p {
@@ -78,7 +79,7 @@ nav, .right-menu{
         white-space: normal;
     }
     .hero-content h1 span {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
     .hero-content .social-icons a {
         width: 3.2rem;
@@ -137,17 +138,19 @@ nav, .right-menu{
         width: 100% !important;
         object-fit: contain;
         margin-top: 5%;
+        margin-bottom: 15%;
     }
     #about .About .about-content .about-heading {
     font-size: 25px;
-    margin: 0;
-    margin-top: 8%;
+    margin-left: 15px;
     }
     #about .About .about-content p {
         font-size: 17px;
         white-space: normal;
+        margin-left: 15px;
     }
     #about .About .about-content .btn{
+        margin-left: 15px;
         padding: 15px 30px;
     }
     #about .About .about-content .btn a{
@@ -212,6 +215,7 @@ font-size: 25px;
     }
     #contact form input,
 #contact form textarea {
+    padding: 2.2rem;
   width: 100% !important;
 }
 #contact form button{
@@ -226,5 +230,19 @@ font-size: 25px;
 @media (max-width: 999px){
  footer{
         display: block;
+        height: 100%;
+        margin: 0;
+    }
+    footer .footer{
+        display: block; 
+    }
+    footer .footer .menu{
+        margin: auto !important;
+        
+    }
+
+    footer .footer .menu li{
+        display: block; 
+        margin-right: 0 !important;
     }
 }
