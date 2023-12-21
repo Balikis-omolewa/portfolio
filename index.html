@@ -111,18 +111,22 @@
 <!---contact-->
 <section id="contact">
     <h2>Contact <span class="me">Me</span></h2>
-        <form>
+        <form target="_blank" action="https://formsubmit.co/32f4563a23bccf7263213e6f0b5456f4" method="POST">
+        <input type="hidden" name="_subject" value="New submission! From Portfolio">  
+        <input type="hidden" name="_template" value="table">
             <div class="input-box">
-                <input type="text" placeholder="Name" >
-                <input type="email" placeholder="Email">
+                <input type="text" name="name" placeholder="Name" >
+                <input type="email" name="email" placeholder="Email">
              </div>
             <div class="input-box">
-                 <input type="text" placeholder="Phone" >
-                 <input type="email" placeholder="Subject">
+                 <input type="text" name="phone" placeholder="Phone" >
+                 <input type="text"  name="subject" placeholder="Subject">
             </div>
-            <textarea cols="30" rows="18"  placeholder="Message"></textarea>
-           <button><a href="#">Send Message</a></button>
-            </form>
+            <textarea cols="30" rows="18" name="message" placeholder="Message"></textarea>
+           <button type="submit" name="submit"><a>Send Message</a></button>
+            <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        </form>
        
 </section>
 
